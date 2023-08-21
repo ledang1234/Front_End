@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Tinh tien tip</h3>
+        <div>
+            <label>Tong tien thanh toan ?</label>
+            <input type="number" id="totalTip">
+        </div>
+
+        <div>
+            <label>Ban muon tip bao nhieu</label>
+            <select id="select" onclick="selectedIdex()" >
+                <option value="0.5">50%</option>
+                <option value="0.3">30%</option>
+                <option value="0.2">20%</option>
+                <option value="0.1">10%</option>
+                <option value="0.05">5%</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Muon share bao nhieu nguoi</label>
+            <input type="number" id="soNguoi">
+        </div>
+
+        <div>
+            <button type="button" onclick="TinhTien()" >Tinh nao</button>
+           
+        </div>
+            <span id="showResult">vnd</span>
+    </div>
+
+    
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+tao 1 function nay:
+  getItemByType(type, items = []) {
+    return items.find(item => item.type == type);
+  }
+sau do dung no ntn:
+    const elmBikinitop = <Bikinitop item={this.getItemByType('topclothes', this.props.chosenItems)} />;
+item co the la 1 object hoac null

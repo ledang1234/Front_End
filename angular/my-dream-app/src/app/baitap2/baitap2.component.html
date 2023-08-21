@@ -1,0 +1,10 @@
+
+<label>Email</label>
+<input type="email" class="form-control" [(ngModel)]="email">
+
+<label>Fullname</label>
+<input type="text" class="form-control" [value]="fullName" #fullName >
+ 
+<button (click)=onSubmit(fullName.value) class="="btn btn-sucess></button>
+<p>Email: {{email}} </p>
+<p>Fullname: {{name}} </p>
